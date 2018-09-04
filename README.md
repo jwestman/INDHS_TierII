@@ -2,12 +2,14 @@
 Illinois DHS Tier-II Report Generator
 
 viewer/js/gis/dijit
-  Paste TierII.js file
-  Paste TierII folder
 
-viewer/js/config/viewer.js
+Paste TierII.js file
 
-  Edit and paste this text in "widgets" section
+Paste TierII folder
+
+  viewer/js/config/viewer.js
+
+    Edit and paste this text in "widgets" section
 
       tierII: {
         include: true,
