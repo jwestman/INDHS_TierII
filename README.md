@@ -1,5 +1,5 @@
-# ILDHS_TierII
-Illinois DHS Tier-II Report Generator
+# INDHS_TierII
+Indiana DHS Tier-II Report Generator
 
 viewer/js/gis/dijit
 
