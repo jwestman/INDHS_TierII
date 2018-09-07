@@ -1,0 +1,286 @@
+/Tier2relates/MapServer/0?f=pjson
+
+"relationships": [
+  {
+   "id": 0,
+   "name": "Tier2reports",
+   "relatedTableId": 2,
+   "role": "esriRelRoleOrigin",
+   "keyField": "Report_ID",
+   "cardinality": "esriRelCardinalityOneToMany",
+   "composite": false
+  },
+  {
+   "id": 1,
+   "name": "Tier2contacts",
+   "relatedTableId": 1,
+   "role": "esriRelRoleOrigin",
+   "keyField": "Report_ID",
+   "cardinality": "esriRelCardinalityOneToMany",
+   "composite": false
+  }
+ ],
+ 
+ 
+
+"features": [
+  {
+   "attributes": {
+    "ObjectID": 2506,
+    "Report_ID": 26234,
+    "Street1": "200 Gerber St",
+    "Certified_Date__YEAR_": 2018,
+    "Zip_1": 467670259,
+    "AddressID": 92861,
+    "FacilityID": 11691,
+    "ERP": null,
+    "SitePlan": "https://gis.dhs.in.gov/Tier2Prod/?OID=3260",
+    "FacilityName": "Jeld Wen",
+    "City": "Ligonier",
+    "Year": 2018,
+    "SafeguardMeasures": null,
+    "SiteCoordinateAbbreviations": null,
+    "County": "Noble"
+   },
+   "geometry": {
+    "x": 617581.78125,
+    "y": 4591814.7333984375
+   }
+  }
+ ]
+ 
+ 
+ Tier2relates/MapServer/0/queryRelatedRecords?objectIds=2506&relationshipId=1&outFields=*
+ 
+  "relatedRecordGroups": [
+   {
+    "objectId": 2506,
+    "relatedRecords": [
+     {
+      "attributes": {
+       "OBJECTID": 9209,
+       "T2ContactID": 86303,
+       "Certified_Date__YEAR_": 2018,
+       "TwentyFourHour": 5745960619,
+       "Phone": 2608947111,
+       "Moblie": null,
+       "Email": "scrawford@jeldwen.com",
+       "FirstName": "Steve",
+       "LastName": "Crawford",
+       "Title": "Plant Manager",
+       "ReportID": 26234
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 9208,
+       "T2ContactID": 86302,
+       "Certified_Date__YEAR_": 2018,
+       "TwentyFourHour": 5745960619,
+       "Phone": 2608947111,
+       "Moblie": null,
+       "Email": "scrawford@jeldwen.com",
+       "FirstName": "Steve",
+       "LastName": "Crawford",
+       "Title": "Plant Manager",
+       "ReportID": 26234
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 9207,
+       "T2ContactID": 86301,
+       "Certified_Date__YEAR_": 2018,
+       "TwentyFourHour": 5743769257,
+       "Phone": 2608947111,
+       "Moblie": null,
+       "Email": "hgensch@jeldwen.com",
+       "FirstName": "Bart",
+       "LastName": "Gensch",
+       "Title": "JEM Leader",
+       "ReportID": 26234
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 9210,
+       "T2ContactID": 86304,
+       "Certified_Date__YEAR_": 2018,
+       "TwentyFourHour": 3046447222,
+       "Phone": 3047425180,
+       "Moblie": null,
+       "Email": "erapp@jeldwen.com",
+       "FirstName": "Eric",
+       "LastName": "Rapp",
+       "Title": "Director Global Environmental Compliance",
+       "ReportID": 26234
+      }
+     }
+    ]
+   }
+ ]
+ 
+ 
+ Tier2relates/MapServer/0/queryRelatedRecords?objectIds=2506&relationshipId=0&outFields=*
+ 
+  "relatedRecordGroups": [
+   {
+    "objectId": 2506,
+    "relatedRecords": [
+     {
+      "attributes": {
+       "OBJECTID": 19489,
+       "AverageDaily_AmountUnit": "lbs",
+       "Casno": null,
+       "ChemicalName": "Expandable Polystyrene Bead",
+       "Description": "Bag",
+       "Is_EHS": 0,
+       "Location": "Ubiquitous in EPS storage area, on S. side of bldg, & production area",
+       "MaximumDailyAmountUnit": "lbs",
+       "ReportID": 26234,
+       "StorageLocationAmountUnit": "lbs",
+       "CertifiedDate": 2018,
+       "AverageDailyAmount": 200000,
+       "MaximumDailyAmount": 266672,
+       "StorageLocationAmount": 0,
+       "urlGuide": null,
+       "urlName": "http://cameochemicals.noaa.gov/search/simple/name?name=Expandable Polystyrene Bead&submit=Search+Name",
+       "urlCAS": null,
+       "theGuide": null
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 19488,
+       "AverageDaily_AmountUnit": "lbs",
+       "Casno": null,
+       "ChemicalName": "Batteries, Wet filled with acid",
+       "Description": "Other",
+       "Is_EHS": 0,
+       "Location": "Ubiquitous - Industrial Battery, plastic case on forklifts",
+       "MaximumDailyAmountUnit": "lbs",
+       "ReportID": 26234,
+       "StorageLocationAmountUnit": "lbs",
+       "CertifiedDate": 2018,
+       "AverageDailyAmount": 17220,
+       "MaximumDailyAmount": 17220,
+       "StorageLocationAmount": 17220,
+       "urlGuide": null,
+       "urlName": "http://cameochemicals.noaa.gov/search/simple/name?name=Batteries, Wet filled with acid&submit=Search+Name",
+       "urlCAS": null,
+       "theGuide": null
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 19491,
+       "AverageDaily_AmountUnit": "lbs",
+       "Casno": null,
+       "ChemicalName": "Petroleum Distallates",
+       "Description": "Tank inside building",
+       "Is_EHS": 0,
+       "Location": "Throughout building, hydraulic oil tanks on machinery.",
+       "MaximumDailyAmountUnit": "lbs",
+       "ReportID": 26234,
+       "StorageLocationAmountUnit": "lbs",
+       "CertifiedDate": 2018,
+       "AverageDailyAmount": 14400,
+       "MaximumDailyAmount": 14974,
+       "StorageLocationAmount": 14000,
+       "urlGuide": null,
+       "urlName": "http://cameochemicals.noaa.gov/search/simple/name?name=Petroleum Distallates&submit=Search+Name",
+       "urlCAS": null,
+       "theGuide": null
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 19492,
+       "AverageDaily_AmountUnit": "lbs",
+       "Casno": null,
+       "ChemicalName": "Wood Dust",
+       "Description": "Other",
+       "Is_EHS": 0,
+       "Location": "Outside in Truck Trailer SE Side of Bldg near the baghouse",
+       "MaximumDailyAmountUnit": "lbs",
+       "ReportID": 26234,
+       "StorageLocationAmountUnit": "lbs",
+       "CertifiedDate": 2018,
+       "AverageDailyAmount": 20000,
+       "MaximumDailyAmount": 39000,
+       "StorageLocationAmount": 39000,
+       "urlGuide": null,
+       "urlName": "http://cameochemicals.noaa.gov/search/simple/name?name=Wood Dust&submit=Search+Name",
+       "urlCAS": null,
+       "theGuide": null
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 19487,
+       "AverageDaily_AmountUnit": "lbs",
+       "Casno": null,
+       "ChemicalName": "Adhesive",
+       "Description": "Tote bin",
+       "Is_EHS": 0,
+       "Location": "Center of Bldg. Adjacent to Layup",
+       "MaximumDailyAmountUnit": "lbs",
+       "ReportID": 26234,
+       "StorageLocationAmountUnit": "lbs",
+       "CertifiedDate": 2018,
+       "AverageDailyAmount": 31000,
+       "MaximumDailyAmount": 41600,
+       "StorageLocationAmount": 28600,
+       "urlGuide": null,
+       "urlName": "http://cameochemicals.noaa.gov/search/simple/name?name=Adhesive&submit=Search+Name",
+       "urlCAS": null,
+       "theGuide": null
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 19486,
+       "AverageDaily_AmountUnit": "lbs",
+       "Casno": null,
+       "ChemicalName": "Adhesive",
+       "Description": "Tote bin",
+       "Is_EHS": 0,
+       "Location": "SE Corner of Bldg. - Specials Cell",
+       "MaximumDailyAmountUnit": "lbs",
+       "ReportID": 26234,
+       "StorageLocationAmountUnit": "lbs",
+       "CertifiedDate": 2018,
+       "AverageDailyAmount": 31000,
+       "MaximumDailyAmount": 41600,
+       "StorageLocationAmount": 13000,
+       "urlGuide": null,
+       "urlName": "http://cameochemicals.noaa.gov/search/simple/name?name=Adhesive&submit=Search+Name",
+       "urlCAS": null,
+       "theGuide": null
+      }
+     },
+     {
+      "attributes": {
+       "OBJECTID": 19490,
+       "AverageDaily_AmountUnit": "lbs",
+       "Casno": null,
+       "ChemicalName": "Petroleum Distallates",
+       "Description": "Steel drum",
+       "Is_EHS": 0,
+       "Location": "Maintenance Area",
+       "MaximumDailyAmountUnit": "lbs",
+       "ReportID": 26234,
+       "StorageLocationAmountUnit": "lbs",
+       "CertifiedDate": 2018,
+       "AverageDailyAmount": 14400,
+       "MaximumDailyAmount": 14974,
+       "StorageLocationAmount": 974,
+       "urlGuide": null,
+       "urlName": "http://cameochemicals.noaa.gov/search/simple/name?name=Petroleum Distallates&submit=Search+Name",
+       "urlCAS": null,
+       "theGuide": null
+      }
+     }
+    ]
+   }
+ ]

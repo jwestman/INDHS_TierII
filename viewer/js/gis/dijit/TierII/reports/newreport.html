@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>Report</title>
+  <style>
+    body { width: 100%; font-family: 'Arial' }
+    h1 { font-size:20px; text-align: center; }
+    .siteInfo { margin-bottom: 1em; }
+    .siteInfo label { text-decoration: underline; margin-left: 10px; margin-right: 5px;}
+    .chemTable table { width: 100%; margin-bottom: 1em;  }
+    .chemTable tr {  }
+    .chemTable th { text-align: left; text-decoration: underline; }
+    .chemTable td {  }
+
+    .regTable table { width: 100%; margin-bottom: 1em;  }
+    .regTable tr {  }
+    .regTable th { text-align: left; }
+    .regTable td {  }
+
+  </style>
+</head>
+<body>
+
+  <h1>${FacilityName},&nbsp;${Street1},&nbsp;${City},&nbsp;${County}&nbsp;${Zip_1}</h1>
+
+  <div class="siteInfo">
+    <label>Facility Id</label>${FacilityID}<label>Facility Name</label>${FacilityName}<label>Company Name</label>${FacilityName}<label>Facility Status</label>unknown<br/>
+    <label>Facility Location</label>${Street1},&nbsp;${City},&nbsp;IN&nbsp;${Zip_1}<br/>
+    <label>County</label>${County}<label>Fire Department</label>unknown<label>Additional Fire Departments responsing to this facility:</label>unknown<br/>
+    <label>Site Phone</label>unknown<label>Manned</label>unknown<br/>
+    <label>Owner/Operator</label>unknown<br/>
+    <label>LEPC</label>${County} County LEPC Lat/Long:&nbsp;unk,unk<br/>
+    <label>Maximum Number of Occupants at one time:</label>unknown<br/>
+  </div>
+
+  <div class="chemTable">
+    <table><tbody>
+      <tr>
+        <th>CAS No</th><th>Chemical Name</th><th>Pure/Mix</th><th>EHS</th><th>Guide #</th><th>Amount</th><th>Last Modified Date</th>
+      </tr>
+      **chemRows**<tr><td>${Casno}</td><td>${ChemicalName}</td><td>unknown</td><td>${comp_ehs}</td><td>${theGuide}</td><td>${StorageLocationAmount} ${StorageLocationAmountUnit}</td><td>${CertifiedDate}</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="regTable">
+    <table><tbody>
+      <tr>
+	    <th colspan="6">Regulatory and Emergency Contacts</th>
+	  </tr>
+      <tr>
+        <th>Name</th><th>Title</th><th>Phone</th><th>24 Hr Phone</th><th>Email</th>
+      </tr>
+      **regRows**<tr><td>${FirstName} ${LastName}</td><td>${Title}</td><td>${Phone}</td><td>${TwentyFourHour}</td><td>${Email}</td></tr>
+    </tbody></table>
+  </div>
+
+</body>
+</html>
