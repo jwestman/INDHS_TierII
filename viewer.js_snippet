@@ -1,0 +1,12 @@
+    tierii: {
+      include: true,
+      id: 'TierII',
+      type: 'invisible',
+      path: 'gis/dijit/TierII',
+      options: {
+	queryUrl: '//gis.dhs.in.gov/arcgis/rest/services/OpenAccess/Tier2relates/MapServer/0',
+	contactsId: 1,
+	reportsId: 0,
+	facilityField: 'FacilityID'
+      }
+    }
