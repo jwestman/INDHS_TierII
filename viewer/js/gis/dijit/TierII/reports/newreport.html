@@ -25,11 +25,11 @@
   <div class="siteInfo">
     <label>Facility Id</label>${FacilityID}<label>Facility Name</label>${FacilityName}<label>Company Name</label>${FacilityName}<label>Facility Status</label>unknown<br/>
     <label>Facility Location</label>${Street1},&nbsp;${City},&nbsp;IN&nbsp;${Zip_1}<br/>
-    <label>County</label>${County}<label>Fire Department</label>unknown<label>Additional Fire Departments responsing to this facility:</label>unknown<br/>
-    <label>Site Phone</label>unknown<label>Manned</label>unknown<br/>
+    <label>County</label>${County}<label>Fire Department</label>${Fire_Department_Name}<label>Additional Fire Departments responsing to this facility:</label>unknown<br/>
+    <label>Site Phone</label>unknown<label>Manned</label>${IsManned}<br/>
     <label>Owner/Operator</label>unknown<br/>
     <label>LEPC</label>${County} County LEPC Lat/Long:&nbsp;unk,unk<br/>
-    <label>Maximum Number of Occupants at one time:</label>unknown<br/>
+    <label>Maximum Number of Occupants at one time:</label>${MaxOccupants}<br/>
   </div>
 
   <div class="chemTable">
@@ -37,7 +37,7 @@
       <tr>
         <th>CAS No</th><th>Chemical Name</th><th>Pure/Mix</th><th>EHS</th><th>Guide #</th><th>Amount</th><th>Last Modified Date</th>
       </tr>
-      **chemRows**<tr><td>${Casno}</td><td>${ChemicalName}</td><td>unknown</td><td>${comp_ehs}</td><td>${theGuide}</td><td>${StorageLocationAmount} ${StorageLocationAmountUnit}</td><td>${CertifiedDate}</td></tr>
+      **chemRows**<tr><td>${Casno}</td><td>${Chemical_Name}</td><td>${Is_Mix}</td><td>${Is_EHS}</td><td>${theGuide}</td><td>${Storage_Location_Amount} ${Storage_Location_Amount_Unit}</td><td>${CertifiedDate}</td></tr>
     </tbody></table>
   </div>
 
